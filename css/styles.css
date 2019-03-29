@@ -1,36 +1,57 @@
-.wrapper .slides {
-    border: 2px black solid;
-    max-height: 568px;
-    height: 568px;
-    position: relative;
+:root {
+    --wrapper-height: 568px;
+
+}
+
+.wrapper {
+    position: absolute;
+    top: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper, .slides {
+    max-height: var(--wrapper-height);
+    height: var(--wrapper-height);
     width: 100%;
-    overflow: visible;
 }
 
 .slides {
-
+    position: absolute;
 }
 
 #slide1 {
     background-image: url(/assets/images/xhome_one_edit.jpg);
-    background-size: cover;
+    z-index: 30;
 }
 
-#slider2 {
+#slide2 {
     background-image: url(/assets/images/xhome_two_edit.jpg);
-    background-size: cover;
+    z-index: 20;
 }
 
-#slider3 {
+#slide3 {
     background-image: url(/assets/images/xhome_one_edit.jpg);
-    background-size: cover;
+    z-index: 0;
 }
 
+a, .arrow {
+    height: 70px;
+    width: 70px;
+    background-color: rgba(10, 23, 40, 0.5);
+    z-index: 100;
+    position: relative;
+    top: calc(var(--wrapper-height) / 2);
 
+}
 
+#arrow-left {
 
+}
 
-
+#arrow-right {
+    left: 92vw;
+}
 
 
 

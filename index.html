@@ -14,16 +14,16 @@
         <div id="slide1" class='slides'></div>
         <div id="slide2" class='slides'></div>
         <div id="slide3" class='slides'></div>
+    
+        <a href="javascript:void(0);" id='arrow-left' class="arrow"><</a>
+        <a href="javascript:void(0);" id='arrow-right' class="arrow">></a>
     </div>
-    <a href="javascript:void(0);" id='arrow-left' class="arrow"></a>
-    <a href="javascript:void(0);" id='arrow-right' class="arrow"></a>
-   
   </body>
   <script>
 
     $(document).ready(function() {
-        $("#slide1").click(function() {
-            $("#slide1").slideToggle(100)
+        $('.slides').click(function() {
+            $('#slide1').toggle();
         })
     })
 
